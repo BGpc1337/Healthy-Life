@@ -14,7 +14,7 @@ A plataforma tem como objetivo otimizar processos, centralizar informações e r
 - **HTML + CSS + JavaScript:** Estrutura, layout e interação.
 - **Node.js + Express:** Backend, API e servidor.
 - **Firebase:** Autenticação, banco de dados (Firestore) e armazenamento.
-- **Railway:** Plataforma para deploy da aplicação.
+- **Fly.io:** Plataforma para deploy da aplicação.
 
 ## 🎯 Funcionalidades
 - 📋 Cadastro de usuários (administradores e parceiros)
