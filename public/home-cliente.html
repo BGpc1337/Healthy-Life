@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Life</title>
+   <link rel="icon" type="image/x-icon" href="IBAGENS/logo-favi.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="home-cliente.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo-container">
+    <img src="IBAGENS/logo.png" alt="Logo" class="logo">
+    <h1 class="title">HEALTHY LIFE</h1>
+  </div>
+  <div class="user-info">
+    <span id="user-name"></span>
+    <img src="IBAGENS/user.png" alt="Logo do Usuário" class="user-logo">
+    <button id="sair" class="btn-sair" onclick="sair()">Sair</button>
+  </div>
+</header>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="IBAGENS/SOLIDARIEDADE.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <a href="https://grupokovalent.com.br/2023/02/07/descarte-incorreto-de-medicamentos/" target="_blank">
+        <img src="IBAGENS/Impacto.png" class="d-block w-100" alt="...">
+      </a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+
+<div class="painel-titulo text-center my-4">
+  <h2>PAINEL SOLIDÁRIO</h2>
+</div>
+
+<main role="main" class="container mt-5">
+  <div class="container-cards"> 
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" onclick="showForm('Doar Medicamentos')">
+          <img src="IBAGENS/medicacao.png" class="card-img-top" alt="Doar Medicamentos">
+          <div class="card-body">
+            <h5 class="card-title">Doar Medicamentos</h5>
+            <p>Contribua realmente para quem precisa.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" onclick="showForm('Descartar Medicamentos')">
+          <img src="IBAGENS/rem.png" class="card-img-top" alt="Descartar Medicamentos">
+          <div class="card-body">
+            <h5 class="card-title">Descartar Medicamentos</h5>
+            <p>Descarte seguro e responsável.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" onclick="showForm('Atualizar Perfil')">
+          <img src="IBAGENS/prancheta.png" class="card-img-top" alt="Atualizar Perfil">
+          <div class="card-body">
+            <h5 class="card-title">Atualizar Perfil</h5>
+            <p>Mantenha seus dados atualizados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="historicos-container">
+      <div class="card" onclick="showForm('Histórico de Descartes')">
+        <img src="IBAGENS/historico R.png" class="card-img-top" alt="Histórico de Descartes">
+        <div class="card-body">
+          <h5 class="card-title">Histórico de Descartes</h5>
+          <p>Acompanhe seus descartes.</p>
+        </div>
+      </div>
+
+      <div class="card" onclick="showForm('Histórico de Doações')">
+        <img src="IBAGENS/historico.png" class="card-img-top" alt="Histórico de Doações">
+        <div class="card-body">
+          <h5 class="card-title">Histórico de Doações</h5>
+          <p>Veja suas doações anteriores.</p>
+        </div>
+      </div>
+    </div>
+
+  </div> 
+  
+  <div id="mainForm" style="display: none;"></div>
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/11.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.7.0/firebase-firestore-compat.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyDWCZSN1Eo-B7RxZgPQ0qkG_T6V2e75PZo",
+    authDomain: "healthy-life-64ca0.firebaseapp.com",
+    projectId: "healthy-life-64ca0",
+    storageBucket: "healthy-life-64ca0.firebasestorage.app",
+    messagingSenderId: "968139723167",
+    appId: "1:968139723167:web:0d7b0ca207be172ce12daa",
+    measurementId: "G-3QEHS0MYD1"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+
+<script src="home-cliente.js"></script>
+
+<footer class="footer-custom">
+  <div class="footer-container">
+    <p class="footer-message">
+     <strong> Promovemos a solidariedade por meio da doação de medicamentos e o descarte consciente para um futuro mais digno para todos.
+     </strong>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

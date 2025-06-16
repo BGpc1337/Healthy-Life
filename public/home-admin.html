@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel do Administrador</title>
+  <link rel="stylesheet" href="admin.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <aside class="ba-lateral">
+      <div class="user">
+      <span id="user-name"></span>
+      <div class="perfil">
+        <img src="IBAGENS/admin.png" alt="Admin" />
+        <h3>Administrador</h3>
+      </div>
+      </div>
+      <nav>
+        <button onclick="carregarConteudo('dashboard')">Dashboard</button>
+        <button onclick="carregarConteudo('doacao')">Doação</button>
+        <button onclick="carregarConteudo('descarte')">Descarte</button>
+        <button onclick="carregarConteudo('criar')">Criar Usuário</button>
+        <button onclick="carregarConteudo('atualizar')">Atualizar Usuário</button>
+        <button onclick="carregarConteudo('listar')">Remover Usuários</button>
+        <button onclick="sair()">Sair</button>
+      </nav>
+    </aside>
+    <main class="content" id="conteudo">
+      <h2>Escolha uma opção no menu à esquerda.</h2>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

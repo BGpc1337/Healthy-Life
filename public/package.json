@@ -1,0 +1,15 @@
+{
+  "name": "distribuidora-app",
+  "version": "1.0.0",
+  "description": "Sistema Healthy Life - Distribuidora de Medicamentos",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

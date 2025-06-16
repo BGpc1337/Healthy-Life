@@ -1,0 +1,116 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #c6803f, #4e8322);
+  height: 100vh;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 60px 40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 480px; 
+  text-align: center;
+}
+
+.logo {
+  width: 75px;
+  height: 65px;
+  margin: 20px auto 30px auto;
+  display: block;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  font-size: 36px;
+  color: #333;
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #555;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #ccc;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  background-color: #f3f3f3;
+  color: #333;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.buttons button:hover:not(.active) {
+  background-color: #e0e0e0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #e8f0fe;
+  font-size: 15px;
+  font-weight: 500;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4CAF50;
+  outline: none;
+  background-color: #f0f9ff;
+}
+
+.login-botao {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 14px 0;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.login-botao:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
