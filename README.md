@@ -10,7 +10,7 @@ O **Healthy Life** é uma aplicação web para gerenciamento de **pedidos, doaç
 
 A plataforma tem como objetivo otimizar processos, centralizar informações e reduzir o uso de formulários manuais.
 
-## ecnologias Utilizadas
+## Tecnologias Utilizadas
 - **HTML + CSS + JavaScript:** Estrutura, layout e interação.
 - **Node.js + Express:** Backend, API e servidor.
 - **Firebase:** Autenticação, banco de dados (Firestore) e armazenamento.
