@@ -1,11 +1,11 @@
-# 💊 Sistema Healthy Life
+# Sistema Healthy Life
 
 Projeto desenvolvido na disciplina **Laboratório de Simulação e Prototipagem**, como parte de um trabalho acadêmico na instituição de ensino Ulbra.
 
 ## Integrante
 - Brendon de Oliveira Sarate
 
-## 🛠Sobre o Projeto
+## Sobre o Projeto
 O **Healthy Life** é uma aplicação web para gerenciamento de **pedidos, doações e descartes de medicamentos**, facilitando a comunicação entre a distribuidora e os parceiros.
 
 A plataforma tem como objetivo otimizar processos, centralizar informações e reduzir o uso de formulários manuais.
