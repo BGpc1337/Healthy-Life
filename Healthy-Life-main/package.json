@@ -1,0 +1,20 @@
+{
+  "name": "distribuidora-app",
+  "version": "1.0.0",
+  "description": "Aplicação web para gerenciamento de pedidos, doações e descartes de medicamentos.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "distribuidora",
+    "medicamentos",
+    "nodejs",
+    "express"
+  ],
+  "author": "Brendon de Oliveira Sarate",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

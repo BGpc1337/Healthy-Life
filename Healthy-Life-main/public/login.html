@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - Healthy Life</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <div class="background">
+    <div class="login-box">
+      <img src="IBAGENS/logo.png" alt="Logo" class="logo">
+      <h1>Healthy Life</h1>
+      <h2>Login</h2>
+
+      <div class="buttons">
+        <button id="parceiroBtn" class="active">Parceiro(a)</button>
+        <button id="adminBtn">Admin</button>
+      </div>
+
+      <div id="loading" class="hidden">Carregando...</div>
+
+      <form id="parceiroForm" class="form">
+        <input type="text" id="codigoHabilitacaoParceiro" placeholder="Código de Habilitação" required>
+        <input type="password" id="senhaParceiro" placeholder="Senha" required>
+        <button type="submit" class="login-botao">Entrar</button>
+ 
+      </form>
+
+   
+      <form id="adminForm" class="form hidden">
+        <input type="text" id="codigoHabilitacaoAdmin" placeholder="Código de Habilitação" required>
+        <input type="password" id="senhaAdmin" placeholder="Senha" required>
+        <button type="submit" class="login-botao">Entrar</button>
+       
+      </form>
+
+    </div>
+  </div>
+
+  <script type="module" src="login.js"></script>
+</body>
+</html>

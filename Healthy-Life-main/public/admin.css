@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f0f2d;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  height: 0.5vh;
+}
+
+.ba-lateral {
+  width: 250px;
+  height: 1000px;
+  background: linear-gradient(135deg, #5a28f3, #2cb67d);
+  color: white;
+  display: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.ba-lateral .perfil img {
+  width: 80px;
+  border-radius: 0%;
+}
+
+.perfil {
+text-align: center;
+}
+
+.ba-lateral h3 {
+  margin: 15px 0;
+}
+
+.ba-lateral nav {
+  width: 100%;
+}
+
+.ba-lateral nav button {
+  width: 100%;
+  margin: 6px 0;
+  padding: 12px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ba-lateral nav button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: center;
+}
+
+.form-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  padding: 40px 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form input,
+form select {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2c314d;
+  color: #fff;
+  font-size: 15px;
+}
+
+form input::placeholder,
+form select {
+  color: #aaa;
+}
+
+form button {
+  background: linear-gradient(to right, #7f5af0, #5dfdcb);
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background: linear-gradient(to right, #9e89ff, #7affdb);
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: block;
+  flex-direction: column;
+  padding-left: 150px;
+  height: 10vh;
+  color: #fff;
+}
+
+.card {
+  width: 250px; 
+  height: 150px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(211, 67, 224, 0.747);
+  background: rgba(255, 255, 255, 0.05); 
+  transition: transform 0.3s ease;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+.card p {
+  margin: 5px 0 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 25px 20px;
+  border-radius: 20px;
+  width: 260px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #6257ff;
+}
+
+.card p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.lista-itens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+}
+
+.registro-item {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  border-left: 6px solid #ffdd57;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registro-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 221, 87, 0.2);
+}
+
+.registro-item strong {
+  color: #fafaf8;
+}
+
+.registro-item hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 15px 0;
+}
+
+.nenhum-registro,
+.erro-registro {
+  color: #ff7373;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 40px;
+}
+
+.lista-registros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.registro-item {
+    background: #222;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+}
+
+.botao-remover {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+.botao-remover:hover {
+  background: linear-gradient(to right, #ff6a6a, #ff7043);
+}
